@@ -3,7 +3,7 @@ const fetchData = async () => {
     {
         params: {
             apikey: 'c964f021',
-            s: 'avengers'
+            i: 'tt0848228'
         }
     }
     );

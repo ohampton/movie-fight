@@ -1,4 +1,4 @@
-const debounce = (func) => {
+const debounce = (func, delay = 100) => {
     let timeoutID;
     return (...args) => {
         if (timeoutID) {
@@ -6,6 +6,6 @@ const debounce = (func) => {
         }
         timeoutID = setTimeout(() => {
             func.apply(null, args);
-        }, 1000)
+        }, delay)
     };
 };

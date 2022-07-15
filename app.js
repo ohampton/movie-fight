@@ -10,7 +10,7 @@ const autoCompleteConfig = {
       return movie.Title;
     },
     async fetchData(searchTerm) {
-      const response = await axios.get('http://www.omdbapi.com/', {
+      const response = await axios.get('https://www.omdbapi.com/', {
         params: {
           apikey: 'd9835cc5',
           s: searchTerm
@@ -122,23 +122,23 @@ const autoCompleteConfig = {
         </div>
       </article>
   
-      <article data-value=${awards} class="notification is-primary">
+      <article data-value=${awards} class="notification is-link">
         <p class="title">${movieDetail.Awards}</p>
         <p class="subtitle">Awards</p>
       </article>
-      <article data-value=${dollars} class="notification is-primary">
+      <article data-value=${dollars} class="notification is-link">
         <p class="title">${movieDetail.BoxOffice}</p>
         <p class="subtitle">Box Office</p>
       </article>
-      <article data-value=${metascore} class="notification is-primary">
+      <article data-value=${metascore} class="notification is-link">
         <p class="title">${movieDetail.Metascore}</p>
         <p class="subtitle">Metascore</p>
       </article>
-      <article data-value=${imdbRating} class="notification is-primary">
+      <article data-value=${imdbRating} class="notification is-link">
         <p class="title">${movieDetail.imdbRating}</p>
         <p class="subtitle">IMDB Rating</p>
       </article>
-      <article data-value=${imdbVotes} class="notification is-primary">
+      <article data-value=${imdbVotes} class="notification is-link">
         <p class="title">${movieDetail.imdbVotes}</p>
         <p class="subtitle">IMDB Votes</p>
       </article>
